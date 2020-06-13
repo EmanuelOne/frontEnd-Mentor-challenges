@@ -1,0 +1,127 @@
+@import url("C:\Users\10RaByTe\Desktop\fronetend\youtube Exercise\four-card-feature-section-master\Poppins.css");
+html {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+body {
+    background-color: var(--VeryLightGray);
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    font-weight: lighter;
+    margin: 0;
+    color: var(--GrayishBlue);
+}
+
+span {
+    font-weight: 600;
+    color: var(--VeryDarkBlue);
+}
+
+p {
+    color: var(--GrayishBlue);
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1230px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    background-color: white;
+    padding: 30px;
+    width: 350px;
+    margin: 15px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box h2 {
+    margin: 0;
+    color: var(--VeryDarkBlue);
+}
+
+.box img {
+    display: block;
+    margin-left: auto;
+}
+
+.box p {
+    margin: 15px 0 30px;
+}
+
+.box.super::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: var(--Cyan);
+    top: 0;
+    left: 0;
+}
+
+.box.team::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: var(--Red);
+    top: 0;
+    left: 0;
+}
+
+.box.karma::after {
+    content: "";
+    background-color: var(--Orange);
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0;
+}
+
+.box.calculator::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: var(--Blue);
+    top: 0;
+    left: 0;
+}
+
+.box-push {
+    transform: translateY(50%);
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width:885px) {
+    .box-push {
+        transform: translateY(0);
+    }
+}
