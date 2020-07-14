@@ -1,0 +1,156 @@
+html {
+    /* ### Primary */
+    --DesaturatedRed: hsl(0, 36%, 70%);
+    --SoftRed: hsl(0, 93%, 68%);
+    /* ### Neutral */
+    --DarkGrayishRed: hsl(0, 6%, 24%);
+    /* ### Gradients */
+    --angle: 135deg;
+    --beginning1: hsl(0, 0%, 100%);
+    --end1: hsl(0, 100%, 98%);
+    --beginning2: hsl(0, 80%, 86%);
+    --end2: hsl(0, 74%, 74%);
+}
+
+body {
+    margin: 0;
+    font-family: 'Josefin Sans';
+    background-image: url("images/bg-pattern-desktop.svg");
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+}
+
+.head {
+    margin-left: 10rem;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0;
+    position: absolute;
+    top: 150px;
+    /* visibility: hidden; */
+}
+
+.h3 {
+    visibility: visible;
+}
+
+.logo {
+    position: relative;
+    top: 2rem;
+    left: 10rem;
+}
+
+.head header {
+    text-align: left;
+    color: var(--DarkGrayishRed);
+    font-weight: lighter;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+span,
+h3 {
+    color: var(--DesaturatedRed);
+    font-size: 26px;
+    font-stretch: extra-expanded;
+    font-weight: initial;
+}
+
+.box {
+    width: 66%;
+    margin-top: 10rem;
+}
+
+.main img {
+    transform: translateY(-5%);
+    width: fit-content;
+}
+
+main p {
+    color: var(--beginning2);
+    margin-bottom: 50px;
+}
+
+.submit:hover {
+    background: linear-gradient(135deg, hsl(0, 74%, 74%), hsl(0, 80%, 86%));
+}
+
+.email {
+    position: relative;
+}
+
+.email-input {
+    border-radius: 50px;
+    border: 1px solid hsl(0, 36%, 70%);
+    font-size: 15px;
+    padding: 15px 20px;
+    width: 100%;
+    border-right: transparent;
+    outline: none;
+}
+
+.submit {
+    position: absolute;
+    border-radius: 50px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    padding: 9px 20px;
+    transform: translateX(-100%);
+    width: 25%;
+    outline: none;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: -1px 5px 8px -1px hsl(0, 74%, 74%);
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:700px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main img {
+        transform: none;
+    }
+    .logo {
+        top: 0;
+        left: 0;
+        margin: 2rem 10rem;
+    }
+    .head,
+    h1,
+    span {
+        text-align: center;
+        margin-left: 0;
+    }
+    .box {
+        width: 80%;
+        align-items: center;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-left: 7rem;
+    }
+    .attribution {
+        margin-top: 2rem;
+    }
+}
