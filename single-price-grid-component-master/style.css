@@ -1,166 +1,132 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html {
     /* ### Primary */
     --Cyan: hsl(179, 62%, 43%);
     --BrightYellow: hsl(71, 73%, 54%);
     /* ### Neutral */
     --LightGray: hsl(204, 43%, 93%);
-    -GrayishBlue: hsl(218, 22%, 67%);
+    --GrayishBlue: hsl(218, 22%, 67%);
 }
 
 body {
-    font-family: 'Karla';
-    background-color: var(--LightGray);
     margin: 0;
+    background-color: var(--LightGray);
+    font-family: 'Karla', sans-serif;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    transform: translateY(30%);
+    max-width: 50%;
+    margin: 5rem auto;
+    display: grid;
+    background-color: var(--GrayishBlue);
+    border-radius: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box-1,
+.box-2,
+.box-3 {
+    padding: 1rem 1rem 1rem 2rem;
 }
 
 .box-1 {
-    width: 100%;
-    background-color: white;
+    background-color: #fff;
+    grid-column: span 2;
     border-radius: 10px 10px 0 0;
-    padding: 10px 30px 15px 40px;
-    box-shadow: 0 0 16px hsl(218, 22%, 67%);
-    position: relative;
-    left: -35px;
+    box-shadow: 0 0 11px 3px #00000024;
 }
 
-.box-1 h2 {
+.box-1>h1 {
     color: hsl(179, 62%, 43%);
-    font-size: 25px;
     font-weight: 700;
 }
 
-.box-1 h4 {
+.box-1>h3 {
     color: hsl(71, 73%, 54%);
-    font-weight: 400;
-    font-size: 20px;
-    margin-bottom: 10px;
 }
 
-.box-1 p {
-    font-size: 14px;
+.box-1>p {
     color: hsl(218, 22%, 67%);
-    margin-top: 0px;
+    width: 90%;
 }
 
 .box-2 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    color: white;
+    background-color: hsl(179, 60%, 43%);
+    color: hsl(179, 62%, 100%);
+    border-radius: 0 0 0 10px;
+    box-shadow: -6px 8px 11px #00000024;
 }
 
-.content-2 {
-    width: 20%;
-    padding: 20px 22px;
-    column-gap: 10px;
-    background-color: hsl(179, 67%, 50%);
-    border-radius: 0 0 10px 0;
-    box-shadow: 0 9px 16px hsl(218, 22%, 67%);
-    overflow: hidden;
+.box-2>h3 {
+    color: #fff;
 }
 
 span {
     font-size: 30px;
-    color: white;
-    font-weight: bold !important;
+    color: hsl(179, 62%, 100%);
 }
 
-.content-2 p {
-    width: 60%;
-    line-height: 1.4;
+.box-2 .span-p {
+    color: rgba(0, 0, 0, 0.3);
 }
 
-.light-p {
-    color: hsl(218, 22%, 77%) !important;
-    font-size: 16px !important;
-}
-
-.box-2 p {
-    color: hsl(204, 43%, 93%);
-    font-size: 13px;
-    font-weight: 100;
-    line-height: 1.5;
-}
-
-button {
-    width: 100%;
-    background-color: hsla(71, 73%, 54%, 0.815);
-    border-radius: 5px;
-    height: 40px;
+.box-2>button {
+    width: 85%;
+    height: 45px;
+    background-color: hsl(71, 73%, 54%);
     border: none;
-    font-size: medium;
-    transform: translateY(30%);
     outline: none;
-    color: hsla(219, 61%, 90%, 0.795);
-    box-shadow: 0 0 20px hsl(218, 22%, 67%);
+    color: hsl(204, 43%, 100%);
+    border-radius: 10px;
 }
 
 button:hover {
-    background-color: hsl(71, 73%, 40%);
-    color: white;
+    background-color: hsl(71, 60%, 41%);
 }
 
-.content {
-    padding: 20px 50px;
-    overflow: hidden;
-    background-color: hsl(179, 62%, 45%);
-    border-radius: 0 0 0 10px;
-    box-shadow: 0px 9px 16px hsl(218, 22%, 67%);
+button:focus {
+    background-color: hsl(71, 65%, 41%);
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-    transform: translateY(100%);
-    position: relative;
-    bottom: -200px;
+.box-3 {
+    background-color: hsl(179, 70%, 43%);
+    color: hsl(204, 43%, 100%);
+    border-radius: 0 0 10px 0;
+    box-shadow: 5px 6px 13px 0px #0000003b;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
-    text-decoration: none;
+.box-3 :nth-child(even) {
+    width: 65%;
+    color: rgba(255, 255, 255, 0.555);
 }
 
-.big {
-    font-size: 20px;
-    font-variant: small-caps;
-}
-
-@media (max-width:800px) {
+@media (max-width:375px) {
     .container {
-        flex-direction: column;
-        width: 80%;
-        align-items: center;
-        margin: 0 auto;
-        transform: translateY(10%);
+        max-width: 90%;
+        grid-template-columns: 1fr;
     }
     .box-1 {
-        width: 100%;
-        padding: 20px 30px;
-        left: -30px;
+        grid-column: auto;
+    }
+    .box-1 p {
+        width: fit-content;
+    }
+    .box-1 h1 {
+        font-weight: bold;
+        font-size: 20px;
     }
     .box-2 {
-        flex-direction: column;
-    }
-    .content {
-        width: 80%;
-        padding: 20px 30px !important;
         border-radius: 0;
     }
-    .content-2 {
-        width: 80%;
-        padding: 20px 30px !important;
-        border-radius: 0 0 10px 10px
+    .box-3 {
+        border-radius: 0 0 10px 10px;
     }
-    .box {
-        width: 80%;
-    }
+}
+
+
 }
