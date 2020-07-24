@@ -21,7 +21,7 @@ body {
 
 .container {
     max-width: 50%;
-    margin: 5rem auto;
+    margin: 10rem auto;
     display: grid;
     background-color: var(--GrayishBlue);
     border-radius: 10px;
@@ -107,6 +107,7 @@ button:focus {
 
 @media (max-width:375px) {
     .container {
+margin:5rem auto; 
         max-width: 90%;
         grid-template-columns: 1fr;
     }
