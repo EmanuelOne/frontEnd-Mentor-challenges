@@ -1,0 +1,100 @@
+    *,
+     ::after,
+     ::before {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    .container {
+        width: 29%;
+        margin: 50px auto 0;
+        background-color: brown;
+        padding-top: 17px;
+        border-radius: 10px;
+        box-shadow: 0px 8px 5px 3px #000000cf;
+    }
+    
+    .display {
+        background-color: aqua;
+        width: 90%;
+        margin: 0px auto 20px;
+        height: 100px;
+        border-radius: 20px;
+        text-align: left;
+        position: relative;
+    }
+    
+    .display p {
+        color: black;
+        margin: 0;
+        font-size: 30px;
+        position: absolute;
+    }
+    
+    #pre {
+        position: absolute;
+        right: 10px;
+    }
+    
+    #answer {
+        bottom: 10px;
+        left: 10px;
+    }
+    
+    #sign {
+        left: 10px;
+        color: blue;
+    }
+    
+    .p {
+        text-align: right;
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .field {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 20px;
+    }
+    
+    .btn {
+        width: 50px;
+        height: 50px;
+        background-color: aliceblue;
+        margin: 10px;
+        border-radius: 50px;
+        text-align: center;
+        padding: 20px 38px 0 22px;
+        box-shadow: 1px 2px 8px 1px #000000ab;
+        font-size: x-large;
+    }
+    
+    .btn:hover {
+        background-color: gray;
+        box-shadow: 1px 2px 8px 1px #d8d8ceda;
+        color: white;
+    }
+    
+    @media (max-width:400px) {
+        .container {
+            width: 74%;
+        }
+        .btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 1000px;
+            font-size: 16px;
+            padding: 10px 30px 0 15px;
+            position: relative;
+        }
+        .field {
+            padding-left: 9px;
+        }
+    }
