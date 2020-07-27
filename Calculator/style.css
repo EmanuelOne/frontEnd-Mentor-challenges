@@ -84,7 +84,7 @@
     
     @media (max-width:400px) {
         .container {
-            width: 90%;
+            width: 80%;
         }
         .btn {
             width: 30px;
@@ -95,6 +95,6 @@
             position: relative;
         }
         .field {
-            padding-left: 9px;
+            padding-left: 0px;
         }
     }
