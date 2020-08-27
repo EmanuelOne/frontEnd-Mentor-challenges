@@ -1,26 +1,3 @@
-/* ## Colors
-
-### Primary
-
-- Strong Cyan: hsl(171, 66%, 44%)
-- Light Blue: hsl(233, 100%, 69%)
-
-### Neutral
-
-- Dark Grayish Blue: hsl(210, 10%, 33%)
-- Grayish Blue: hsl(201, 11%, 66%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 18px
-
-### Fonts
-
-- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
-- Weights: 400, 600 */
-
 *,
 *::before,
 *::after {
@@ -63,6 +40,7 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     transform: translateY(-10%);
+    padding: 10rem 0 0;
 }
 
 button {
