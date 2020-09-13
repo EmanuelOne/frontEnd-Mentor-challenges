@@ -12,6 +12,7 @@ html {
 body {
   background-color: var(--VeryLightGray);
   font-family: "Poppins", sans-serif;
+  margin-top:1rem;
 }
 
 * {
@@ -47,6 +48,9 @@ p {
   }
   .box:nth-child(odd) {
     transform: none !important;
+  }
+  body{
+    margin-top:0rem;
   }
 }
 .container {
