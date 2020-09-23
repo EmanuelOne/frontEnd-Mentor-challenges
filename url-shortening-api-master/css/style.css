@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.white {
+  padding: 0 2rem 0 5rem;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+nav {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+.nav-right,
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 2rem;
+}
+.nav-right p {
+  margin: 0;
+}
+.nav-item .btn {
+  padding: 0.5rem 1.5rem !important;
+}
+.btn {
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  font-family: "Poppins";
+  border: none;
+  color: #fff !important;
+  outline: none;
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+}
+p {
+  font-weight: 500;
+  /* color: hsl(0, 0%, 75%); */
+  color: hsl(257, 7%, 63%);
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: hsl(260, 8%, 14%);
+}
+.left div {
+  width: 80%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.left h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+.left h1 ~ p {
+  margin-top: 0;
+}
+.left button {
+  align-self: start;
+  padding: 1rem 5rem;
+}
+header {
+  display: flex;
+  margin: 5rem auto 0;
+}
+.left {
+  align-self: center;
+  flex-wrap: wrap;
+}
+.left p {
+  width: inherit;
+}
+.right img {
+  width: 100%;
+}
+.shortner {
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 5;
+  background-image: url("C:\\Users\\Emanuel\\Desktop\\frontEnd-Mentor-challenges\\ass\\url-shortening-api-master\\images\\bg-shorten-desktop.svg");
+  /* background-image: url(./images/bg-shorten-desktop.svg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(257, 27%, 26%);
+  justify-content: space-between;
+  padding: 3rem;
+  border-radius: 10px;
+  column-gap: 3rem;
+  margin: 5rem auto 1rem;
+}
+.input {
+  width: 80%;
+}
+input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  border: 2px #ab3f3fd9 solid;
+}
+.input ~ button {
+  border-radius: 10px;
+  width: 20%;
+}
+.input ~ button:hover {
+  background-color: hsl(180, 66%, 37%);
+}
+.white ~ section {
+  background-color: hsl(0, 0%, 95%);
+  padding: 1rem 2rem 2rem 5rem;
+}
+.advance {
+  text-align: center;
+  margin: 0 auto 5rem;
+  width: 40%;
+}
+.advance h2 {
+  font-size: 2.5rem;
+  margin: 0 auto;
+}
+.advance p {
+  margin-top: 0;
+}
+.advance ~ section {
+  display: flex;
+  justify-content: space-around;
+  /* gap: 6rem; */
+  column-gap: 6rem;
+  position: relative;
+}
+.box {
+  background-color: #fff;
+  padding: 2rem 1rem 1rem;
+  position: relative;
+  width: 33.333%;
+  border-radius: 10px;
+  height: 33.333%;
+  z-index: 4;
+}
+
+.box:nth-of-type(even) {
+  margin-top: 3%;
+}
+.box:nth-of-type(3) {
+  margin-top: 6%;
+}
+.box h1 {
+  font-size: 1.17rem;
+  margin-top: 0.5rem;
+}
+.line {
+  position: absolute;
+  left: 10%;
+  top: 40%;
+  height: 4px;
+  background: hsl(180, 66%, 49%);
+  content: "";
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+}
+.line2 {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  height: 4px;
+  background: hsl(180, 66%, 49%);
+  content: "";
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+}
+.box .img {
+  position: absolute;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 50%;
+  top: -10%;
+  display: flex;
+  left: 10%;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+}
+.img img {
+  height: 50%;
+  width: 50%;
+  align-self: center;
+}
+.call-to-action {
+  text-align: center;
+  padding: 5rem 10rem;
+  background-image: url("C:\\Users\\Emanuel\\Desktop\\frontEnd-Mentor-challenges\\ass\\url-shortening-api-master\\images\\bg-boost-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(257, 27%, 26%);
+}
+.shortner ~ ul {
+  list-style: none;
+  padding: 0;
+}
+.shortner ~ ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.call-to-action h1 {
+  color: #fff;
+}
+footer {
+  background-color: hsl(260, 8%, 14%);
+  padding: 1rem 2rem 0rem 5rem;
+}
+.col {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.col p {
+  margin: 0;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+.row:first-of-type {
+  align-self: center;
+}
+.row:last-of-type {
+  flex-direction: row;
+  column-gap: 1rem;
+}
+.row p:first-of-type {
+  color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .white {
+    padding: 0 2rem;
+  }
+  .white ~ section {
+    padding: 2rem;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .nav-left {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  header p {
+    width: auto;
+  }
+  .left div {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .left div button {
+    margin: 0 auto;
+  }
+  .left div h1 {
+    font-size: 2.5rem !important;
+  }
+  .shortner {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .input,
+  .shortner .btn {
+    width: 100%;
+  }
+  section section {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+  section .box {
+    width: 100%;
+  }
+  .line2 {
+    left: 50%;
+    top: 0%;
+    right: 0;
+    height: 80%;
+    width: 4px;
+    display: none;
+  }
+
+  .line {
+    left: 50%;
+    top: 0%;
+    height: 80%;
+    width: 4px;
+  }
+  h1 {
+    font-size: 1.17rem !important;
+  }
+  .advance {
+    width: 100%;
+  }
+  .advance h2 {
+    font-size: 1.5rem;
+  }
+  .advance p {
+    font-size: 14px;
+  }
+  .call-to-action {
+    padding: 5rem 0;
+  }
+  .call-to-action h1 {
+    font-size: 1.5rem !important;
+    margin-bottom: 2rem;
+  }
+  footer {
+    padding: 2rem;
+  }
+  footer > .col {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.5rem;
+    padding: 0;
+    align-content: center;
+    text-align: center;
+  }
+}
