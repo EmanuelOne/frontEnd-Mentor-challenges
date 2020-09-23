@@ -122,8 +122,9 @@ input {
 }
 .advance {
   text-align: center;
-  margin: 0 auto 5rem;
+  margin: 5rem auto 5rem;
   width: 40%;
+  padding-top:2rem
 }
 .advance h2 {
   font-size: 2.5rem;
