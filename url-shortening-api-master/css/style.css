@@ -107,7 +107,7 @@ input {
   padding: 1rem;
   border-radius: 10px;
   border: none;
-  border: 2px #ab3f3fd9 solid;
+ /* border: 2px #ab3f3fd9 solid;*/
 }
 .input ~ button {
   border-radius: 10px;
