@@ -1,56 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonts.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts.css" />
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <!-- <script src="script.js"></script> -->
-    <script src="timer.js"></script>
-    <script src="time.js"></script>
+    <!-- <script src="timer.js"></script>
+    <script src="time.js"></script> -->
+  </head>
 
-
-
-</head>
-
-<body onload="startTime()">
-    <img src="images/logo.svg" alt="BASE APPAREL" class="logo">
+  <body>
+    <img src="images/logo.svg" alt="BASE APPAREL" class="logo" />
 
     <div class="main">
-        <div class="head">
-            <h3 id="txt" class="txt"> Current Time is </h3>
-            <div class="box">
-
-                <header>
-                    <h1><span id="demo"> We're </span> coming soon</h1>
-                </header>
-                <main>
-                    <p>
-                        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
-                    </p>
-                    <div class="email">
-                        <input type="email" placeholder="Email Address" class="email-input" required>
-                        <input type="submit" value=">" class="submit">
-                    </div>
-                </main>
-            </div>
+      <div class="head">
+        <div class="box">
+          <header>
+            <h1>
+              <span id="demo"> We're </span>
+              <p>coming soon</p>
+            </h1>
+          </header>
+          <main>
+            <p>
+              Hello fellow shoppers! We're currently building our new fashion
+              store. Add your email below to stay up-to-date with announcements
+              and our launch deals.
+            </p>
+            <form class="email">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="email-input"
+                required
+              />
+              <button type="submit" class="submit">
+                <img src="./images/icon-arrow.svg" class="arrow" alt="" />
+              </button>
+            </form>
+          </main>
         </div>
-        <div class="img"><img src="images/hero-desktop.jpg" alt=""></div>
+        <footer>
+          <p class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by <a href="#">Emmanuel</a>.
+          </p>
+        </footer>
+      </div>
+      <div class="img"><img src="images/hero-desktop.jpg" alt="" /></div>
     </div>
-
-
-    <footer>
-        <p class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Emmanuel</a>.
-        </p>
-    </footer>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
