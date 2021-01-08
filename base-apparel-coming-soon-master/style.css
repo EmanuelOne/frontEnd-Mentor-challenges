@@ -91,7 +91,7 @@ h3 {
 
 .main .img > img {
   /* transform: translateY(-5%); */
-  width: 100%;
+  width: fit-content;
   height: 99vh;
 }
 
