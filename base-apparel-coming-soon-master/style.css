@@ -181,13 +181,15 @@ main p {
   .box {
     width: 100%;
     align-items: center !important;
+margin:1rem auto;
   }
   main {
     display: flex;
     flex-direction: column;
-    /* margin-left: 7rem; */
+     margin: 1rem auto; 
     width: 80%;
   }
+form{margin:1rem;}
   .attribution {
     margin-top: 5rem;
     width: 100%;
